@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IP Tracker</title>
+    <link rel="icon" type="image/svg+xml" href="/images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-sans">
+    <main id="app" class="h-screen flex flex-col">
+      <div
+        id="container"
+        class="bg-[url('/images/pattern-bg.png')] w-full h-[250px] bg-no-repeat bg-cover flex flex-col items-center p-6"
+      >
+        <h1 class="text-white text-[30px] font-[500] m-3">
+          IP Address Tracker
+        </h1>
+        <div
+          class="relative bg-white m-3 h-[50px] rounded-xl flex overflow-hidden w-[500px] xs:w-full"
+        >
+          <input
+            placeholder="Search for any IP address or domain"
+            class="flex-1 border outline-0 p-5 text-[16px] text-Very-Dark-Gray"
+          />
+          <div
+            class="bg-[#000] flex justify-center items-center cursor-pointer w-[50px]"
+          >
+            <img src="/images/icon-arrow.svg" alt="arrow" />
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full flex-1 relative">
+        <div class="p-6 absolute top-[-70px] z-20 w-full">
+          <div
+            class="w-10/12 xs:w-full bg-white drop-shadow-2xl mx-auto xs:max-w-full px-5 py-7 rounded-lg grid grid-cols-4 xs:grid-cols-1 sm:divide-x xs:text-center"
+          >
+            <div class="xs:mb-4">
+              <h2 class="text-xs text-Dark-Gray mb-3 xs:mb-1 font-medium">
+                IP ADDRESS
+              </h2>
+              <p class="font-medium text-2xl">192.212.174.101</p>
+            </div>
+            <div class="pl-5 xs:mb-4">
+              <h2 class="text-xs text-Dark-Gray mb-3 xs:mb-1 font-medium">
+                IP ADDRESS
+              </h2>
+              <p class="font-medium text-2xl">192.212.174.101</p>
+            </div>
+            <div class="pl-5 xs:mb-4">
+              <h2 class="text-xs text-Dark-Gray mb-3 xs:mb-1 font-medium">
+                IP ADDRESS
+              </h2>
+              <p class="font-medium text-2xl">192.212.174.101</p>
+            </div>
+            <div class="pl-5 xs:mb-4">
+              <h2 class="text-xs text-Dark-Gray mb-3 xs:mb-1 font-medium">
+                IP ADDRESS
+              </h2>
+              <p class="font-medium text-2xl">192.212.174.101</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="map" class="w-full bg-red-900 h-full z-10"></div>
+      </div>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
